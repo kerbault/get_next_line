@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_itoa.c                                        .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: kerbault <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/22 20:38:04 by kerbault     #+#   ##    ##    #+#       */
-/*   Updated: 2017/11/22 20:38:07 by kerbault    ###    #+. /#+    ###.fr     */
+/*   Updated: 2017/12/02 21:01:29 by kerbault    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -17,8 +17,7 @@ static char	*ft_minint(void)
 {
 	char	*min;
 
-	if (!(min = (char *)malloc(sizeof(*min) * 12)))
-		return (NULL);
+	MALLOC_CHECK((min = (char *)malloc(sizeof(*min) * 12)));
 	min = ft_strdup("-2147483648\0");
 	return (min);
 }
