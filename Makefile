@@ -6,7 +6,7 @@
 #    By: kerbault <kerbault@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/22 21:55:44 by kerbault     #+#   ##    ##    #+#        #
-#    Updated: 2017/12/04 22:39:32 by kerbault    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/04/24 16:29:00 by kerbault    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -36,8 +36,10 @@ LIBFT		:= ft
 
 #### Files definition section ####
 
-INCLUDESDIR	:= includes
-INCLUDES	:= -I$(INCLUDESDIR)/ -I$(LIBFTDIR)/$(INCLUDESDIR)
+INCLUDESDIR	:= inc
+INCLUDES	:= \
+	-I$(INCLUDESDIR)/ \
+	-I$(LIBFTDIR)/$(INCLUDESDIR)
 SRCDIR		:= src
 SRCS		:= \
 	maintest.c \
